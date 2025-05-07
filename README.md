@@ -36,7 +36,7 @@ Loose Coupling: اجزا مستقل‌اند و فقط از طریق event با 
 Scalability: می‌توان چندین instance از هر سرویس (مثلاً چند Consumer) اجرا کرد تا بار کاری بالاتر را پاسخ دهند.
 Extensibility: اضافه کردن قابلیت جدید (مثل سرویس گزارش‌گیری یا analytics) فقط با ثبت یک subscriber جدید ممکن است.
 
-![eventmart.png](images/kafka/eventmart.png)
+![images/kafka/eventmart.png](images/kafka/eventmart.png)
 حالا که متن «فروشگاه جادوییِ EventMart» را خوانده‌اید و به این تصویر نگاه می‌کنید، می‌توانید ببینید که:
 مغازه (Publisher) زنگ می‌زند و رویداد را به ابر (event bus) می‌فرستد
 سه کاراکتر در سمت راست (Subscribers) هر کدام با فلش‌هایی که از ابر می‌آیند، پیام را دریافت و واکنش نشان می‌دهند
@@ -134,7 +134,7 @@ Broker Castle: «یک لحظه صبر کن؛ درخواست fetch تو در صف
 
 در پایان روز، Sir Producer و Sir Consumer هر دو گرد هم آمدند و زیر نور فانوس‌های ایستگاه کافکا به استقبال ستارگان ریل‌ها نشستند. آن‌ها می‌دانستند با تنظیم درست batch.size، linger.ms، buffer.memory و acks، می‌توانند قطارهای داده را روان و بی‌خطا هدایت کنند تا جایی که راه‌آهن کافکا دیگر یک بلک‌باکس نباشد، بلکه شبکه‌ای شفاف و قدرتمند باشد.****
 
-![/images/train in the kafka railway/.png](/images/kafka/train in the kafka railway.png)
+![/images/kafka/train in the kafka railway.png](/images/kafka/train in the kafka railway.png)
 این تصویر روایت Producer و Consumer را با تم ایستگاه راه‌آهن نشان می‌دهد:
 
 سمت چپ، واگن‌های «buffer» و «batch size» قرار دارند (کمک می‌کنند پیام‌ها آمادهٔ ارسال شوند).
@@ -191,7 +191,7 @@ Sir Producer بسته را روی Partition 1 قرار می‌دهد (rail 1).
 ۵. نظارت و خطاگیری (Monitoring & Fault Handling)
 در طول کار، ابزارهای مانیتورینگ (مثل Prometheus/Grafana) مصرف حافظه، تاخیر پردازش و نرخ خطا را رصد می‌کنند. اگر خطای نرم (مثلاً داده ناقص) رخ دهد، پیام به Dead‑Letter Topic فرستاده شده و پردازش ادامه می‌یابد. در مواجهه با خطای سخت (مثل قطع ارتباط Broker)، مکانیزم‌های بازگشت (Retry) یا جابجایی (Fallback) پیاده‌سازی می‌شود تا جریان کلی مختل نشود. این سازوکارها تضمین می‌کنند که سیستم همیشه پایدار و قابل اطمینان بماند.
 
-![stream processors.png](images/kafka/stream%20processors.png)
+![images/kafka/stream processors.png](images/kafka/stream%20processors.png)
 این تصویر مثل یک کارگاه راه‌آهن است که واگن‌های پر از رویداد (Events) وارد آن می‌شوند، کارگران (Stream Processors) آنها را فیلتر و مرتب می‌کنند و سپس واگن‌ها را روی ریل‌های خروجی می‌گذارند تا دوباره حرکت کنند
 
 # Event Sourcing
