@@ -134,7 +134,7 @@ Broker Castle: «یک لحظه صبر کن؛ درخواست fetch تو در صف
 
 در پایان روز، Sir Producer و Sir Consumer هر دو گرد هم آمدند و زیر نور فانوس‌های ایستگاه کافکا به استقبال ستارگان ریل‌ها نشستند. آن‌ها می‌دانستند با تنظیم درست batch.size، linger.ms، buffer.memory و acks، می‌توانند قطارهای داده را روان و بی‌خطا هدایت کنند تا جایی که راه‌آهن کافکا دیگر یک بلک‌باکس نباشد، بلکه شبکه‌ای شفاف و قدرتمند باشد.****
 
-![/images/kafka/train in the kafka railway.png](/images/kafka/train in the kafka railway.png)
+![/images/kafka/train in the kafka railway.png](/images/kafka/train%20in%20the%20kafka%20railway.png)
 این تصویر روایت Producer و Consumer را با تم ایستگاه راه‌آهن نشان می‌دهد:
 
 سمت چپ، واگن‌های «buffer» و «batch size» قرار دارند (کمک می‌کنند پیام‌ها آمادهٔ ارسال شوند).
